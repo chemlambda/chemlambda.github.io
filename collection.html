@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!--
+author: Marius Buliga
+last modified: 14.01.2020
+-->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="collection-css/collection.css">
+
+<title>Chemlambda collection</title>
+</head>
+
+
+<body>
+
+<script src="collection-js/d3.v5.9.4.min.js"></script>
+<script src="collection-js/jquery.min.js"></script>
+<script src="collection-js/s_pagelook.js"></script>
+
+<div class="header">
+  <span><a href="http://imar.ro/~mbuliga/index.html">&copy; Marius Buliga</a> (a 1/2 of) the chemlambda collection of animations, partially salvaged from G+</span> 
+  <span id="listofposts"></span><br>
+  <span>See also:<br> <a href="https://mbuliga.github.io/quinegraphs/ice.html">Interaction Combinators and chemlambda quine graphs</a> <br> <a href="https://mbuliga.github.io/quinegraphs/lambda2mol.html">lambda calculus to chemlambda parser</a> <br> <a href="https://mbuliga.github.io/quinegraphs/ouroboros.html">the story of the ouroboros</a> </span>
+</div>
+<div class="row">
+  <div class="col-12 menu" style="text-align: left;">
+    <div class="scol-6"> <span3  id="button5" class="image2" ></span3></div>
+    <div class="scol-6"> <span3  id="button6" class="image2" ></span3></div>
+    <div class="scol-6"> <span3  id="button7" class="image2" ></span3></div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-4 menu" style="text-align: left;">
+  <span5><br><br>[</span5></span5><span5 id="collection-number"></span5><span5>]</span5>
+  <span id="collection-text"></span>
+<!--  <span5 id="collection-image" ></span5> -->
+  </div>
+  <div class="col-1 menu">
+  <span id="listofmols"></span>
+  </div>
+  <div class="col-6 menu">
+  <ul>
+    <li>
+      <span5 id="collection-image" ></span5>
+<!--    <span id="collection-text"></span>  -->
+    </li>
+    <li>
+      <div class="col-2 menu">
+        <div class="scol-12"> <span3  id="button0" class="image2" ></span3></div>
+        <div class="scol-12"> <span3  id="button1" class="image2" ></span3></div>
+        <div class="scol-12"> <span3  id="button2" class="image2" ></span3></div>
+        <div class="scol-12"> <span3  id="button3" class="image2" ></span3></div>
+        <div class="scol-12"> <span3  id="button4" class="image2" ></span3></div>
+      </div>
+      <div class="col-10 menu">  
+        <ul>
+          <li><span3>gravity slider</span3> <div class="slidecontainer">MIN &nbsp;<input class="slider" type="range" min="1" max="250" value="30" id="gravRange"> &nbsp; MAX</div></li>
+          <li><span5>zoom with mouse wheel, move with mouse drag</span5>
+          <li> <div id="svgdiv"> </div></li>
+          <li> <span3>rewrites weights slider</span3> <div class="slidecontainer">GROW &nbsp;<input class="slider" type="range" min="0" max="100" value="50" id="rewritesRange"> &nbsp; SLIM</div></li>
+          <li><span> (Rewrites stop at max.  </span><span id="maxnodenumber">1024</span> nodes<span>)</span></li>
+          <li><span2>CODE: </span2><span id="molyoulookat"></span></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+  </div>
+  <div class="col-1 menu">
+  <span></span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-4 menu" style="text-align: left;">
+  <span></span>
+  </div>
+  <div class="col-1 menu">
+  <span></span>
+  </div>
+</div>
+
+
+
+
+
+
+<script src="collection-js/s_text2-exp.js"></script>
+<script src="collection-js/verifiedMol.js"></script>
+<script src="collection-js/s_text-parser.js"></script>
+<script src="collection-js/iceMol.js"></script>
+<script src="collection-js/iceComments.js"></script>
+<script src="collection-js/parameters.js"></script>
+<script src="collection-js/nodes.js"></script>
+<script src="collection-js/chemistry.js"></script>
+<!-- <script src="js/reactions.js"></script> -->
+<script src="collection-js/myD3Graph.js"></script>
+<script src="collection-js/icequine.js"></script>
+<!--<script src="js/0parser.js"></script> -->
+<!--<script src="js/lambdaTerms.js"></script>  -->
+<script>
+StartingPost();
+whichButtons();
+selectionStarter();
+reloadCode();
+//listOfposts();
+</script>
+
+</body>
+</html>
+
+
+
