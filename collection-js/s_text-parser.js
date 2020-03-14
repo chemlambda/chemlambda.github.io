@@ -100,6 +100,7 @@ document.getElementById("molyoulookat").innerHTML = output3;
 PutLiveAnimation();
 
 location.hash = "#" + post;
+document.getElementById("citeas").innerHTML = location.hash;
 
 }
 
