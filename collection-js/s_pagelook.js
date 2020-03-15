@@ -52,6 +52,7 @@ var ButtonOriginal = [
   {"Id":"button5", "Class":"image2", "Visibility":"visible", "Onclick": function () {PreviousPost();}, "Text":"<<"},
   {"Id":"button6", "Class":"image2", "Visibility":"visible", "Onclick": function () {NextPost();}, "Text":">>"},
   {"Id":"button7", "Class":"image2", "Visibility":"visible", "Onclick": function () {RandomPost();}, "Text":"random"},
+//  {"Id":"button8", "Class":"image2", "Visibility":"visible", "Onclick": function () {RandomPost();}, "Text":"search"},
 //  {"Id":"button8", "Class":"image2", "Visibility":"visible", "Onclick": function () {PutLiveAnimation();}, "Text":"live"},
 //  {"Id":"lambdatomolbutton", "Class":"image2", "Visibility":"visible", "Onclick": function () {setSpeed(0); setStart(0); lambdaToMol(); reloadCode();}, "Text":"&lambda;>mol"}
 ];
